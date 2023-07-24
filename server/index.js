@@ -15,10 +15,9 @@ app.use(express.json());
 app.use(cors());
 app.use(UsertRoute);
 app.use((req, res, next) => {
-    res.setHeader("Acces-Control-Allow-Origin", "*");
-    next();
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  next();
 });
-
 // routes
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
