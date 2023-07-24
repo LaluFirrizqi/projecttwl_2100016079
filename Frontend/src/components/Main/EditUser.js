@@ -14,7 +14,7 @@ const EditUser = () => {
   }, []);
 
   const getUserById = async () => {
-    const response = await axios.get(`http://localhost:3001/users/${id}`);
+    const response = await axios.get(`https://projecttwl-2100016079.vercel.app/users/${id}`);
     setName(response.data.name);
     setEmail(response.data.email);
     setGender(response.data.gender);
@@ -23,7 +23,7 @@ const EditUser = () => {
   const updateUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.patch(`http://localhost:3001/users/${id}`, {
+      await axios.patch(`https://projecttwl-2100016079.vercel.app/users/${id}`, {
         name,
         email,
         gender,

@@ -17,13 +17,13 @@ const UserList = () => {
   }, []);
 
   const getUsers = async () => {
-    const response = await axios.get("http://localhost:3001/users");
+    const response = await axios.get("https://projecttwl-2100016079.vercel.app/users");
     setUsers(response.data);
   };
 
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`http://localhost:3001/users/${id}`);
+      await axios.delete(`https://projecttwl-2100016079.vercel.app/users/${id}`);
       getUsers();
     } catch (error) {
       console.log(error);

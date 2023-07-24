@@ -11,7 +11,7 @@ const AddUser = () => {
   const saveUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3001/users", {
+      await axios.post("https://projecttwl-2100016079.vercel.app/users", {
         name,
         email,
         gender,
