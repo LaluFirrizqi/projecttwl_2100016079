@@ -12,10 +12,12 @@ function App() {
 	return (
 		<Routes>
 			{user && <Route path="/" exact element={<UserList />} />}
+			{user && <Route path="/add" exact element={<AddUser />} />}
+			{user && <Route path="/edit/:id" exact element={<EditUser />} />}
 
 			<Route path="/signup" exact element={<Signup />} />
-			<Route path="edit/:id" element={<EditUser />} />
-			<Route path="/add" element={<AddUser />} />
+			<Route path="/edit/:id" element={<Navigate replace to="/login" />} />
+			<Route path="/add" element={<Navigate replace to="/login" />} />
 
 
 			<Route path="/login" exact element={<Login />} />
