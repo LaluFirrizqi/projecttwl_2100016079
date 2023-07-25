@@ -9,6 +9,9 @@ const UsertRoute = require("./routes/UserRoute");
 
 // database connection
 connection();
+app.get("/", (req, res) => {
+  res.send("Halo, Selamat Datang!");
+});
 
 // middlewares
 app.use(express.json());
