@@ -79,7 +79,7 @@
 }
 
 .white_btn,
-.green_btn {
+.orange_btn {
 	border: none;
 	outline: none;
 	padding: 12px 0;
@@ -91,7 +91,7 @@
 	cursor: pointer;
 }
 
-.green_btn {
+.orange_btn {
 	background-color: #ff7b00;
 	color: white;
 	margin: 10px;
